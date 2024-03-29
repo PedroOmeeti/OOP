@@ -24,7 +24,7 @@
   Modelo: $this->modelo<br>
   Ano: $this->ano<br>
   Cor: $this->cor<br>
-  Preço Zero: R$ $this->preco_zero<br>";
+  Preço Zero: R$ $this->preco_zero<br><br>";
  }
 
  public function calcularIdade() {
@@ -32,7 +32,7 @@
  }
   
 public function calcularDepreciacao() {
-  $d = $this->preco_zero- (((date('Y')-$this->ano)* 430) +2100);
+  $d = $this->preco_zero - (((date('Y')-$this->ano)* 430) +2100);
   echo "Valor Atual: R$ " . $d . "<br>";
 }
 
@@ -41,13 +41,12 @@ public function ehNovo() {
   if($idade <= 2) {
     echo "Carro Novo <br>";
   } else {
-    echo "Carro Velho <br>";
+    echo "Carro Velho <br><br>";
   }
 }
 
 public function pintarVeiculo($novaCor) {
   $this->cor = $novaCor;
-  echo "$this->cor<br>";
 }
 
 }

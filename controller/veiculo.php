@@ -7,6 +7,8 @@
   $veiculo1->calcularDepreciacao();
   $veiculo1->ehNovo();
   $veiculo1->pintarVeiculo("Rosa");
+  $veiculo1->exibirInformacoes();
+
 
 
 
